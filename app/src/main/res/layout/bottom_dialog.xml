@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000fff"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_map_tencent"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="@string/map_tencent"
+        android:textColor="@android:color/background_dark"
+        android:textSize="16sp"
+        android:visibility="gone"
+        android:background="@drawable/trangle_shape"/>
+
+    <View
+        android:id="@+id/v_map_tencent"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:visibility="gone"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/tv_map_gaode"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="@string/map_gaode"
+        android:textColor="@android:color/background_dark"
+        android:textSize="16sp"
+        android:visibility="gone"
+        android:background="#ffffff"/>
+
+    <View
+        android:id="@+id/v_map_gaode"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:visibility="gone"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/tv_map_baidu"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="@string/map_baidu"
+        android:textColor="@android:color/background_dark"
+        android:textSize="16sp"
+        android:visibility="gone"
+        android:background="#ffffff"/>
+
+    <View
+        android:id="@+id/v_map_baidu"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:visibility="gone"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/tv_map_tian"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="@string/map_tian"
+        android:textColor="@android:color/background_dark"
+        android:textSize="16sp"
+        android:visibility="gone"
+        android:background="#ffffff"/>
+
+    <View
+        android:id="@+id/v_map_tian"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:visibility="gone"
+        android:background="@android:color/darker_gray"
+     />
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="@string/cancel"
+        android:textStyle="bold"
+        android:textColor="@android:color/background_dark"
+        android:textSize="16sp"
+        android:background="#ffffff"/>
+
+</LinearLayout>
