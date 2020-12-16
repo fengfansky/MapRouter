@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button mapBtn;
     private BaseMap map;
     private BottomDialog bottomDialog;
+    private CenterDialog centerDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,7 +36,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Toast.makeText(getApplicationContext(), "您的手机未安装导航App,请先下载哦", Toast.LENGTH_SHORT)
                     .show();
         } else {
-            bottomDialog = new BottomDialog(MainActivity.this , installedPackageNames);
+            centerDialog = new CenterDialog(MainActivity.this);
+            centerDialog.show();
+
+      /*      bottomDialog = new BottomDialog(MainActivity.this , installedPackageNames);
             bottomDialog.setClickListener(new BottomDialog.OnSelectListener() {
                 @Override
                 public void onSelect(int position, String text) {
@@ -60,7 +64,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     }
                 }
             });
-            bottomDialog.show();
+            bottomDialog.show();*/
         }
 
     }
